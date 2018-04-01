@@ -113,7 +113,7 @@ typedef void(^CPSDKFailureBlock)(NSError * _Nullable error);
 - (void)leaveRoom;
 
 /**
- *  使用消费档位游戏，游戏中会通过websocket接受到实时游戏结果，只需实现代理方法即可，如果该机器30s内收不到websocket通知的游戏结果，将自动结束游戏
+ *  使用消费档位游戏，游戏中会通过websocket接受到实时游戏结果，只需实现代理方法即可，如果该机器90s内收不到websocket通知的游戏结果，将自动结束游戏
  *
  *  @param deviceId  int   设备id
  *  @param consumeId  int   消费档位ID

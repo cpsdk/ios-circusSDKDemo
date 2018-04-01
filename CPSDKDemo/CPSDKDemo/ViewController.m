@@ -10,7 +10,6 @@
 #import <CircusSDK/CPSDK.h>
 #import "CPDeviceListCollectionViewController.h"
 #import "AFHTTPSessionManager.h"
-#import "Test.h"
 
 @interface ViewController ()<NSURLSessionDelegate>
 
@@ -37,10 +36,6 @@
          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
              
          }];
-    
-    Test *test = [Test new];
-    test.testValue = @"testtesttesttesttesttest";
-    NSLog(@"testValue  ===    %@", test.testValue);
     
 }
 
