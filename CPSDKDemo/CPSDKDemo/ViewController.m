@@ -37,6 +37,8 @@
              
          }];
     
+    
+    
 }
 
 
@@ -65,6 +67,12 @@
             [alertVC addAction:cancleAction];
             [self presentViewController:alertVC animated:YES completion:nil];
         }
+        
+        // 测试消费档位
+//        [[CPSDK sharedCPSDK] getConsumeListWithDeviceId:1237267 success:^(NSArray<CPConsume *> * _Nullable consumeList) {
+//
+//            NSLog(@"consumeList  ==  %@", consumeList);
+//        }];
     }];
 }
 
